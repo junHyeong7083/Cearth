@@ -2,6 +2,23 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
+#----LLM 모델파일 무시----#
+*.bin
+*.gguf
+*.pt
+*.safetensors
+
+# LLM 패키지에서 포함하는 네이티브 라이브러리
+*.dll
+*.so
+*.dylib
+
+# CUDA / GPU 관련 바이너리
+*cuda*.dll
+*cuda*.so
+*cuda*.dylib
+
+
 .utmp/
 /[Ll]ibrary/
 /[Tt]emp/
