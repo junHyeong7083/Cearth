@@ -17,7 +17,9 @@
 *cuda*.dll
 *cuda*.so
 *cuda*.dylib
-
+Assets/StreamingAssets/Models/
+Assets/StreamingAssets/*.gguf
+Assets/StreamingAssets/*.bin
 
 .utmp/
 /[Ll]ibrary/
