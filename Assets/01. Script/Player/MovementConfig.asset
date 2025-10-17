@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0ced429c3253a4e88d926013dea68d, type: 3}
+  m_Name: MovementConfig
+  m_EditorClassIdentifier: 
+  walkSpeed: 3.5
+  sprintSpeed: 6
+  accelGround: 30
+  accelAir: 10
+  decelGround: 60
+  rotateSharpness: 0.25
+  jumpHeight: 1.2
+  coyoteTime: 0.12
+  jumpBuffer: 0.12
+  extraGravity: 15
+  groundCheckRadius: 0.25
+  groundCheckOffset: 0.05
+  slopeLimit: 50
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  enableStep: 1
+  stepHeight: 0.35
+  stepCheckDistance: 0.3
