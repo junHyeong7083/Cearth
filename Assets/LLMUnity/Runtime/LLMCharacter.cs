@@ -1,5 +1,6 @@
 /// @file
 /// @brief File implementing the LLM characters.
+using NUnit.Framework.Internal;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -244,6 +245,7 @@ namespace LLMUnity
         /// <param name="clearChat"> whether to clear (true) or keep (false) the current chat history on top of the system prompt. </param>
         public virtual void SetPrompt(string newPrompt, bool clearChat = true)
         {
+
             prompt = newPrompt;
             nKeep = -1;
             if (clearChat) ClearChat();
@@ -518,9 +520,8 @@ namespace LLMUnity
         /// <returns>the LLM response</returns>
         public virtual async Task<string> Chat(string query, Callback<string> callback = null, EmptyCallback completionCallback = null, bool addToHistory = true)
         {
-            // handle a chat message by the user
-            // call the callback function while the answer is received
-            // call the completionCallback function when the answer is fully received
+
+
             await LoadTemplate();
             if (!CheckTemplate()) return null;
             if (!await InitNKeep()) return null;
