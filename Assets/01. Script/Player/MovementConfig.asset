@@ -24,7 +24,7 @@ MonoBehaviour:
   extraGravity: 15
   groundCheckRadius: 0.25
   groundCheckOffset: 0.05
-  slopeLimit: 50
+  slopeLimit: 20
   groundMask:
     serializedVersion: 2
     m_Bits: 4294967295
